@@ -45,6 +45,7 @@ header{
   grid-column-gap: 20px;
   grid-row-gap: 132px;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 .article-group{
   margin: 28px 0;
