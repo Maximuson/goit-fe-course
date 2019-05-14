@@ -36,7 +36,8 @@ header{
   line-height: 24px;
   text-transform: uppercase;
 }
-.nav-link:hover{
+.nav-link:hover,
+.nav-link:focus {
   color: #03a9f4;
 }
 .articles-items {
@@ -47,7 +48,7 @@ header{
   justify-content: space-evenly;
   list-style-type: none;
 }
-.article-group{
+.article-group {
   margin: 28px 0;
   color: #b4ad9e;
   font-family: Ubuntu;
@@ -88,6 +89,11 @@ header{
   line-height: 24px;
   text-decoration: none;
 }
-.hide{
+.hide {
   display: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
