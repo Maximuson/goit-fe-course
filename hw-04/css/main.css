@@ -138,6 +138,7 @@ header {
   width: 255px;
   height: 40px;
   background-color: #323232;
+  font-size: 0;
 }
 .product__name,
 .product__price {
