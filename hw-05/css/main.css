@@ -12,7 +12,7 @@ body{
 }
 
 @font-face{
-  font-family: "Roboto", "Roboto - Black";
+  font-family: "Roboto - Black", "sans-serif";
   src: url('../fonts/roboto-black.ttf')
 }
 .clearfix{
@@ -56,7 +56,7 @@ header {
 }
 .logo__text::first-letter{
   color: #1abc9c;
-  font-family: "Roboto", "Roboto - Black";
+  font-family: "Roboto - Black", "sans-serif";
   font-weight: 400;
   letter-spacing: -0.6px; 
  }
@@ -168,7 +168,7 @@ header {
   color: #fff;
   text-transform: uppercase;
   color: #fff;
-  font-family: "Roboto", "Roboto - Black";
+  font-family: "Roboto - Black", "sans-serif";
   font-size: 60px;
   font-weight: 400;
   letter-spacing: -1.2px;
@@ -187,7 +187,7 @@ header {
   display: block;
   text-align: center;
   color: #515151;
-  font-family: "Roboto", "Roboto", "Roboto - Black";
+  font-family: "Roboto", "Roboto - Black", "sans-serif";
   font-size: 48px;
   font-weight: 400;
   line-height: 32px;
@@ -248,7 +248,7 @@ header {
 .product__price {
   display: inline-block;
   color: #fff;
-  font-family: "Roboto", "Roboto - Black";
+  font-family: "Roboto - Black", "sans-serif";
   font-size: 18px;
   font-weight: 400;
   line-height: 40px;
