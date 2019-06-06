@@ -349,4 +349,5 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
