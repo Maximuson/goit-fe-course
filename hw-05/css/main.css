@@ -25,6 +25,7 @@ body{
 }
 .container{
   max-width: 1170px;
+  padding: 0 30px;
   width: 100%;
   margin: 0 auto;
 }
@@ -142,6 +143,7 @@ header {
 
 .slider-section{
   height: 600px;
+  position: relative;
   background-image: url(../img/bgsection.jpg);
   background-size: cover;
   background-attachment: scroll;
