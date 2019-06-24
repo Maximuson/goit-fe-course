@@ -13,7 +13,7 @@ body{
 
 @font-face{
   font-family: "Roboto - Black";
-  src: url('../fonts/roboto-black.ttf')
+  src: url('../fonts/roboto-black.ttf');
 }
 .clearfix{
   clear: both;
