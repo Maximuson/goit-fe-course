@@ -251,6 +251,10 @@ textarea {
   outline: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .btn-submit {
   margin: 30px auto 0;
   width: 240px;
