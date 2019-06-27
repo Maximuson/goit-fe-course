@@ -189,7 +189,7 @@ html{
   padding: 110px 0 114px;
   background-image: url(../img/Map_Image.png);
   background-repeat: no-repeat;
-  background-position: right bottom+20px
+  background-position: right bottom+20px;
 }
 
 .form{
@@ -240,7 +240,6 @@ textarea {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  /* Text style for "y, our Nam" */
   letter-spacing: -0.35px;
 }
 

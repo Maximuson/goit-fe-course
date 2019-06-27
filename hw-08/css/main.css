@@ -20,8 +20,13 @@ img {
   margin: 0 auto;
 }
 header {
+  max-width: 942px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 .login-list {
   display: flex;
@@ -41,7 +46,7 @@ header {
   border-radius: 20px;
   text-decoration: none;
   line-height: 1;
-  font-size: 0.7rem;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #fff;
@@ -57,6 +62,10 @@ header {
   
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: #1a1915;
   background-image: url(../img/main-background.png);
   background-position: center;
@@ -67,8 +76,6 @@ header {
 .promo-content{
   color: #fff;
   width: 280px;
-  margin: 0 auto;
-  margin-top: 114px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -82,6 +89,9 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+.promo_logo.header{
+  display: none;
 }
 .promo_title {
   margin: 20px 0 10px 0;
@@ -112,6 +122,7 @@ header {
 .partners {
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 58px;
 }
 .cards_list {
   display: flex;
@@ -125,6 +136,9 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.cards_item:last-child {
+  margin-bottom: 26px;
 }
 
 .img_wrapper {
@@ -154,4 +168,92 @@ header {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
+}
+
+.white-button {
+  width: 280px;
+  height: 40px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  border-radius: 40px;
+  color: #ff4e50;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+}
+.img_wrapper{
+  position: relative;
+}
+.img_wrapper::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  border: 4px solid #ffffff;
+  background-color: #ff4e50;
+  bottom: 0;
+  border-radius: 50%;
+  right: 0;
+
+}
+@media (min-width: 768px) {
+
+  .promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .promo-content {
+    margin: 0;
+  }
+  .promo_logo {
+    display: none;
+  }
+  .promo_logo.header {
+    display: inline-block;
+    color: #fff;
+  }
+  header {
+    padding: 30px 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .login-list {
+    margin: 0;
+  }
+  .cards_list {
+    max-width: 492px;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-height: 560px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .cards_item:last-child{
+    margin-bottom: 0;
+  }
+  .cards_item {
+    max-height: 240px;
+    overflow: auto;
+  }
+  .white-button{
+    margin-top: 35px;
+  }
+  .promo-content {
+    min-width: 512px;
+  }
+  .promo_title {
+    font-size: 52px;
+  }
+  .promo_title-hint {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }
