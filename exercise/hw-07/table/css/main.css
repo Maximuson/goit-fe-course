@@ -1,0 +1,31 @@
+table{
+  margin: 30px auto;
+  width: 66%;
+  border-spacing: 10px;
+  background-color: #1a1a1a;
+}
+
+td{
+  background-color: #2f2f2f;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.yellow {
+  background-color: #caa942;
+}
+
+.red {
+  background-color: #b32411;
+}
+
+.blue {
+  background-color: #31607f;
+}
+
+.gray {
+  background-color: #ae9e7e;
+}

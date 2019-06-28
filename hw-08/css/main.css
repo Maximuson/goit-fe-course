@@ -177,9 +177,10 @@ header {
   background-color: #ffffff;
   border-radius: 40px;
   color: #ff4e50;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 }
 .img_wrapper{
   position: relative;
@@ -191,12 +192,33 @@ header {
   width: 33px;
   height: 33px;
   border: 4px solid #ffffff;
-  background-color: #ff4e50;
   bottom: 0;
   border-radius: 50%;
   right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+}
+.img_wrapper.red::after {
+  background-color: #ff4e50;
+  background-image: url(../img/icon-tw.png);
+}
+.img_wrapper.green::after {
+  background-color: #1cd7ad;
+  background-image: url(../img/icon-coffee.png);
+}
+.img_wrapper.yellow::after {
+  background-color: #ffa507;
+  background-image: url(../img/icon-colb.png);
+}
+
+.img_wrapper.blue::after {
+  background-color: #4e73db;
+  background-image: url(../img/icon-airplane.png);
+  background-position: center left+5px;
 
 }
+
 @media (min-width: 768px) {
 
   .promo {
@@ -232,7 +254,7 @@ header {
     justify-content: space-around;
     max-height: 560px;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
   }
   .cards_item:last-child{
@@ -255,5 +277,12 @@ header {
     font-size: 24px;
     margin-top: 10px;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards_list {
+    flex-direction: row;
+    max-width: 940px;
   }
 }
