@@ -118,6 +118,7 @@ header {
   font-weight: 700;
   outline: none;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
 }
 .partners {
   text-align: center;
@@ -181,7 +182,15 @@ header {
   font-size: 14px;
   font-weight: 700;
   cursor: pointer;
+  transition: transform 0.2s ease-in;
 }
+
+.white-button:hover,
+.promo_button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in;
+}
+
 .img_wrapper{
   position: relative;
 }
@@ -280,7 +289,7 @@ header {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 940px) {
   .cards_list {
     flex-direction: row;
     max-width: 940px;
