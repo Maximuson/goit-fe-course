@@ -143,6 +143,25 @@ img {
 
 }
 
+.white-button {
+  width: 280px;
+  height: 40px;
+  border: 2px solid #ff4e50;
+  background-color: #ffffff;
+  border-radius: 40px;
+  color: #ff4e50;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.white-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in;
+}
+
 @media screen and (min-width: 480px) {
   .container-fluid {
     background-image: 
