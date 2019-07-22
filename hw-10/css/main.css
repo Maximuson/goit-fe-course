@@ -106,6 +106,10 @@
   cursor: pointer;
 }
 
+.list-nav .item__icon--hover:hover {
+  fill: var(--yellow);
+}
+
 .item__link--hover:hover,
 .item__link:focus {
   outline: none;
