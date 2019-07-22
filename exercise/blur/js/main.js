@@ -1,4 +1,4 @@
 $(function() {
   $( ".container" ).draggable();
-  $(".container").resizable();
+  // $(".container").resizable();
 });

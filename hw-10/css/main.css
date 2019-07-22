@@ -100,6 +100,12 @@
   text-decoration: none;
 }
 
+.list-nav .item__icon {
+  height: 18px;
+  width: 18px;
+  cursor: pointer;
+}
+
 .item__link--hover:hover,
 .item__link:focus {
   outline: none;
@@ -397,6 +403,9 @@
 }
 
 .social-icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 56px;
   width: 56px;
   background-color: var(--yellow);
@@ -405,6 +414,28 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.social-icons__item .item__icon-facebook {
+  width: 12px;
+  height: 26px;
+}
+
+.social-icons__item .item__icon-twitter {
+  width: 26px;  
+  height: 22px;
+}
+
+.social-icons__item .item__icon-pinterest {
+  width: 20px;  
+  height: 26px;
+}
+
+.social-icons__item .item__icon-instagram {
+  width: 26px;  
+  height: 26px;
+}
+
+
 
 .cards__item--hover:hover .social-icons__item,
 .cards__item--hover:focus .social-icons__item {
