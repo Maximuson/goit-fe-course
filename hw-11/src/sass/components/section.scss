@@ -1,0 +1,51 @@
+.section-header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-header__subtitle {
+  color: $title-color;
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section-header__title {
+  margin-top: 10px;
+  font-family: $title-font;
+  color: $title-color;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section-header__title::after {
+  margin: 30px auto;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: $secondary-accent-color;
+}
+
+.section {
+  padding: 45px 0;
+}
+
+.section-services__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.section__text {
+  margin: 36px auto 82px;
+  font-family: $text-main-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $text-main-color;
+}

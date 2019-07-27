@@ -1,0 +1,53 @@
+.item__card {
+  padding-left: 80px;
+  width: 380px;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 28px;
+  }
+}
+
+.card__title {
+  font-size: 14px;
+  font-family: $title-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $title-color;
+}
+
+.card__text {
+  margin-top: 5px;
+  color: $text-main-color;
+  font-family: $text-main-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.alarm::before {
+  content: url(../images/ALARM.png);
+}
+
+.line-graph::before {
+  content: url(../images/LINE_GRAPH.png);
+}
+
+.computer::before {
+  content: url(../images/COMPUTER.png);
+}
+
+.book::before {
+  content: url(../images/BOOK_2.png);
+}
+
+.home::before {
+  content: url(../images/HOME.png);
+}
+
+.square::before {
+  content: url(../images/IMAGE.png);
+}

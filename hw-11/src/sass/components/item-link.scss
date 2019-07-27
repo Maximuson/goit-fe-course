@@ -1,0 +1,38 @@
+.item__link {
+  position: relative;
+  color: $primary-white-color;
+  font-family: $title-font;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: $primary-accent-color;
+    -webkit-transition: color 0.2s ease-in;
+    -o-transition: color 0.2s ease-in;
+    transition: color 0.2s ease-in;
+
+    &::after {
+      left: 0;
+      width: 100%;
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 8px;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: $primary-accent-color;
+    color: $primary-accent-color;
+  }
+}
+

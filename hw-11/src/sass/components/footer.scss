@@ -1,0 +1,19 @@
+.footer {
+  height: 62px;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copyright,
+.footer__author-name {
+  font-family: $title-font;
+  font-size: 14px;
+  font-weight: 400;
+  color: $title-color;
+}
+
+.footer__author-name {
+  color: $secondary-accent-color;
+}

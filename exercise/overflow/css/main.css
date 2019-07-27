@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  text-align: justify;
+}
+*{
+  box-sizing: border-box;
+}
+.img-wrapper {
+  height: 290px;
+  width: 240px;
+  display: inline-block;
+  overflow: hidden;
+  float: left;
+  shape-outside: polygon(0.33px 2.47px,2.33px 279.53px,225.83px 280.00px,58.08px 2.74px);
+  clip-path: polygon(0.33px 2.47px,2.33px 279.53px,225.83px 280.00px,58.08px 2.74px);
+  shape-margin: 8px;
+}
+img {
+  height: 290px;
+  width: 240px;
+}
+.clearfix {
+  display: table;
+  clear: both;
+  content: '';
+}
+span {
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  flex-wrap: wrap;
+
+}
+.card {
+  height: 300px;
+  width: 50%;
+  background-image: url(../img/mac.jpg);
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #fff;
+  transition: all .2s linear;
+}
+.card.top-left {
+  clip-path: circle(30% at 100% 100%);
+}
+.card.top-right {
+  clip-path: circle(30% at 0% 100%);
+}
+.card.bottom-left {
+  clip-path:circle(30% at 100% 0%);
+}
+.card.bottom-right {
+  clip-path: circle(30% at 0% 0%);
+}
+.card:hover {
+  transition: all .2s ease-in-out;
+  clip-path: circle(100% at 50% 50%);
+}

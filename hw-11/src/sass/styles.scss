@@ -1,0 +1,24 @@
+/*
+   Import partials below
+*/
+@import './helpers/variables';
+@import './normalize';
+@import './base';
+
+/* Component */
+
+@import './components/container';
+@import './components/wrapper';
+@import './components/header';
+@import './components/list-nav';
+@import './components/item-link';
+@import './components/cover';
+@import './components/section';
+@import './components/item__card';
+@import './components/list-services__item';
+@import './components/cards';
+@import './components/cards__item';
+@import './components/social-block';
+@import './components/social-icon';
+@import './components/footer';
+@import './components/form'
