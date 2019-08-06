@@ -9,6 +9,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.min.css" />
+    <script
+      async
+      src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"
+    ></script>
+
     <title>hw-11</title>
   </head>
   <body>
@@ -155,8 +160,16 @@
             <div class="cards__bg">
               <div class="cards__img-block">
                 <picture>
-                  <source srcset="./images/man1.jpg 1x, ./images/man1@2x.jpg 2x" />
-                  <img src="./images/man1.jpg" alt="Matthew Dix" />
+                  <source
+                    data-srcset="./images/man1.jpg 1x, ./images/man1@2x.jpg 2x"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="./images/man1.jpg"
+                    alt="Matthew Dix"
+                    height="470"
+                    width="380"
+                  />
                 </picture>
 
                 <div class="img-block__social-icons">
@@ -203,8 +216,14 @@
             <div class="cards__bg">
               <div class="cards__img-block">
                 <picture>
-                  <source srcset="./images/man2.jpg 1x, ./images/man2@2x.jpg 2x" />
-                  <img src="./images/man2.jpg" alt="Christopher Campbell" />
+                  <source
+                    data-srcset="./images/man2.jpg 1x, ./images/man2@2x.jpg 2x"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="./images/man2.jpg"
+                    alt="Christopher Campbell"
+                  />
                 </picture>
 
                 <div class="img-block__social-icons">
@@ -251,8 +270,14 @@
             <div class="cards__bg">
               <div class="cards__img-block">
                 <picture>
-                  <source srcset="./images/man3.jpg 1x, ./images/man3@2x.jpg 2x" />
-                  <img src="./images/man3.jpg" alt="Michael Fertig " />
+                  <source
+                    data-srcset="./images/man3.jpg 1x, ./images/man3@2x.jpg 2x"
+                  />
+                  <img
+                    class="lazy"
+                    data-src="./images/man3.jpg"
+                    alt="Michael Fertig "
+                  />
                 </picture>
 
                 <div class="img-block__social-icons">
@@ -315,5 +340,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="./js/scripts.min.js"></script>
   </body>
 </html>
